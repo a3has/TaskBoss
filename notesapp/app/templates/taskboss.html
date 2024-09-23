@@ -1,67 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Boss</title>
-
-    <link rel="stylesheet" href="style.css"> <!-- Link your external CSS file here, if needed -->
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-            font-size: 18px;
-        }
-
-        .task-container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 800px;
-        }
-
-        .btn {
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <div class="task-container">
-        <h1>Welcome to Task Boss</h1>
-        <p>This is where you'll manage your tasks efficiently.</p>
-        <button class="btn">Start Managing Tasks</button>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="static/globals.css" />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <div class="home-page-desktop">
+      <div class="div">
+        <img class="task-boss" src="static/img/task-boss.png" />
+        <div class="overlap">
+          <div class="overlap-group">
+            <div class="dropdown-menu">
+              <header class="header">
+                <div class="menu-item-label">San Jose</div>
+                <img class="chevron-up" src="static/img/chevron-up.svg" />
+              </header>
+              <div class="options">
+                <div class="op"><div class="text-wrapper">San Jose</div></div>
+                <div class="menu-item-label-wrapper"><div class="menu-item-label">Dorm</div></div>
+              </div>
+            </div>
+            <div class="user-user-wrapper">
+              <div class="user-user">User1<br />User2</div>
+            </div>
+            <div class="div-wrapper"><div class="text-wrapper-2">Add Members +</div></div>
+            <div class="overlap-2">
+              <div class="group">
+                <div class="chores-display"></div>
+                <div class="chores-display-2"></div>
+                <div class="chores-display-3"></div>
+              </div>
+              <div class="text-wrapper-3">Until Weekend</div>
+              <img class="tomorrow" src="static/img/tomorrow.png" />
+              <div class="group-2">
+                <div class="overlap-3">
+                  <div class="chore">
+                    <div class="overlap-group-2">
+                      <div class="overlap-4"><div class="text-wrapper-4">Turn: User 2</div></div>
+                      <img class="done" src="static/img/done-3.svg" />
+                      <div class="overlap-group-3">
+                        <div class="take-out-the-trash">Take out the trash<br />6:30-7:30</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chore">
+                    <div class="overlap-group-2">
+                      <div class="overlap-group-4"><div class="text-wrapper-4">Turn: User 2</div></div>
+                      <img class="done" src="static/img/done-7.svg" />
+                      <div class="overlap-group-3">
+                        <div class="take-out-the-trash">Take out the trash<br />6:30-7:30</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="overlap-wrapper">
+                  <div class="overlap-group-2">
+                    <div class="overlap-group-5"><div class="text-wrapper-5">Turn: User 1 (You)</div></div>
+                    <img class="done" src="static/img/done-5.svg" />
+                    <div class="overlap-group-3">
+                      <p class="move-car-for-parking">Move car for parking rotation<br />9:30-11:30</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="overlap-group-wrapper">
+                <div class="overlap-group-2">
+                  <div class="overlap-5"><div class="text-wrapper-4">Turn: User 2</div></div>
+                  <img class="done" src="static/img/done.svg" />
+                  <div class="overlap-group-3">
+                    <div class="feed-cat">Feed cat<br />9:30-11:30</div>
+                  </div>
+                </div>
+              </div>
+              <div class="chore-2">
+                <div class="overlap-6">
+                  <div class="overlap-group-6"><div class="text-wrapper-4">Turn: User 2</div></div>
+                  <img class="done" src="static/img/done-2.svg" />
+                  <div class="vacuum-living-room-wrapper">
+                    <div class="vacuum-living-room">Vacuum living room<br />9:30-11:30</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-wrapper-6">Today</div>
+              <div class="notification"></div>
+              <img class="mask-group" src="static/img/mask-group-3.png" />
+              <div class="notification-2"></div>
+              <img class="img" src="static/img/mask-group-2.png" />
+              <div class="chore-3">
+                <div class="overlap-7">
+                  <div class="overlap-8"><div class="text-wrapper-4">Turn: User 2</div></div>
+                  <img class="done" src="static/img/done-6.svg" />
+                  <div class="overlap-group-7">
+                    <div class="take-out-recycling">Take out recycling<br />6:30-7:30</div>
+                  </div>
+                </div>
+              </div>
+              <div class="chore-4">
+                <div class="overlap-7">
+                  <div class="overlap-group-8"><div class="text-wrapper-7">Turn: User 1</div></div>
+                  <img class="done" src="static/img/done-4.svg" />
+                  <div class="overlap-group-7">
+                    <div class="feed-cat-2">Feed cat<br />6:30-7:30</div>
+                  </div>
+                </div>
+              </div>
+              <div class="notification-3"></div>
+              <img class="mask-group-2" src="static/img/mask-group.png" />
+              <div class="notification-4"></div>
+              <img class="mask-group-3" src="static/img/mask-group-5.png" />
+              <div class="notification-5"></div>
+              <img class="mask-group-4" src="static/img/image.png" />
+              <div class="notification-6"></div>
+              <img class="mask-group-5" src="static/img/mask-group-4.png" />
+              <img class="rectangle" src="static/img/rectangle-11.png" />
+              <img class="rectangle-2" src="static/img/rectangle-12.png" />
+              <div class="rectangle-3"></div>
+              <div class="rectangle-4"></div>
+              <div class="text-wrapper-8">Revolving?</div>
+              <div class="text-wrapper-9">Chore name:</div>
+              <div class="text-wrapper-10">Assignee(s):</div>
+              <div class="text-wrapper-11">Due by:</div>
+              <div class="text-wrapper-12">Add a Chore:</div>
+              <div class="rectangle-5"></div>
+              <div class="user-user-2">User1<br />User2</div>
+              <img class="calendar" src="static/img/calendar.png" />
+            </div>
+          </div>
+          <div class="group-3">
+            <div class="overlap-group-9"><div class="text-wrapper-13">+ Add Chore</div></div>
+          </div>
+        </div>
+        <div class="text-wrapper-14">Hello, User1</div>
+        <img class="home" src="static/img/home.png" />
+        <img class="support" src="static/img/support.png" />
+        <img class="person" src="static/img/person.png" />
+        <img class="checkbox" src="static/img/checkbox.svg" />
+      </div>
     </div>
-
-    <!-- Add your scripts here -->
-    <script src="app.js"></script> <!-- Optional: Link your JavaScript file if needed -->
-</body>
+  </body>
 </html>
