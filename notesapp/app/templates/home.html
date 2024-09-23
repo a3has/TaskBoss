@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 
-  
     <link rel="stylesheet" href="{{ url_for('static', filename='buttonlayout1.css') }}" />
     
     <style>
         body {
-            background-image: url("{{ url_for('static', filename='mybackground.jpeg') }}");
-            background-size: cover; 
-            margin: 0; 
-            font-family: Arial, sans-serif; 
+            background-image: url("{{ url_for('static', filename='taskbackground.jpeg') }}");
+        background-size: cover; /* Ensures the image covers the entire window */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        margin: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh; /* Set the body height to fill the viewport */
+        width: 100vw; /* Set the body width to fill the viewport */
         }
 
         nav {
             background-color: #e2e2e2; /* Set a background color for the navigation bar */
+            width: 100%;
             overflow: hidden; 
+            position: absolute; /* Fix the nav at the top */
+            top: 0;
         }
 
         nav a {
@@ -33,7 +38,6 @@
             box-sizing: border-box; 
         } 
 
-
         nav a:hover {
             background-color: #666262; /* Add a background color on hover */
             color: black; 
@@ -41,22 +45,29 @@
 
         h2 {
             text-align: center;
-            margin-top: 150px; 
-            color: rgb(136, 17, 17); /* STCKY Notes COLOR */
-            font-size: 200px;
+            color: rgb(136, 17, 17); /* Sticky Notes Color */
+            font-size: 80px;
+            margin-bottom: 50px;
         }
 
         .button-container {
             text-align: center; 
-            margin-top: 20px; 
         }
 
-       
         .button-container button {
-            
-            margin: 5px;
-            
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #032592; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
         }
+
+        .button-container button:hover {
+            background-color: #2bc069; /* Darken button on hover */
+        }
+
     </style>
 </head>
 <body>
@@ -96,10 +107,13 @@
         </a>
     </nav>
 
-    <h2>Sticky Notes</h2>
+    <h2>Task Boss!</h2>
 
     <div class="button-container">
-
+        <!-- Add your centered button here --> 
+        <a href="taskboss">
+        <button>Click me to access Task Boss!</button>
+        </a>
     </div>
 </body>
 </html>
