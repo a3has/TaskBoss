@@ -65,7 +65,7 @@
 
   <div class="clearfix">
     {% for note in posts %}
-    <div class="sticky-note" style="background-color: {{ note.color }};">
+    <div class="sticky-note" style="background-color: '{{ note.color }}';">
       <div class="note-actions">
         <a href="{{ url_for('edit_note', note_id=note.id) }}" class="edit-btn">Edit</a>
         <form action="{{ url_for('delete_note', note_id=note.id) }}" method="post">
