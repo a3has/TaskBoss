@@ -52,6 +52,12 @@ def index():
     return print_index_table()
 
 
+# simple calendar embed without needing to login.
+@app.route('/taskboss')
+def taskboss():
+    return render_template('taskboss.html')
+
+
 # sends you to the google authorization login screen
 @app.route('/Googlelogin')
 def Googlelogin():
