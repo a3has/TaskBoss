@@ -477,14 +477,6 @@
   border-radius: 15px;
 }
 
-.home-page-desktop .mask-group {
-  position: absolute;
-  width: 50px;
-  height: 60px;
-  top: 249px;
-  left: 355px;
-}
-
 .home-page-desktop .notification-2 {
   top: 629px;
   left: 355px;
@@ -493,14 +485,6 @@
   height: 60px;
   background-color: #101010;
   border-radius: 15px;
-}
-
-.home-page-desktop .img {
-  top: 629px;
-  left: 355px;
-  position: absolute;
-  width: 50px;
-  height: 60px;
 }
 
 .home-page-desktop .chore-3 {
@@ -600,14 +584,6 @@
   border-radius: 15px;
 }
 
-.home-page-desktop .mask-group-2 {
-  top: 437px;
-  left: 355px;
-  position: absolute;
-  width: 50px;
-  height: 60px;
-}
-
 .home-page-desktop .notification-4 {
   top: 249px;
   left: 803px;
@@ -618,12 +594,12 @@
   border-radius: 15px;
 }
 
-.home-page-desktop .mask-group-3 {
-  top: 249px;
-  left: 803px;
+.home-page-desktop .mask-group {
   position: absolute;
   width: 50px;
   height: 60px;
+  top: 249px;
+  left: 803px;
 }
 
 .home-page-desktop .notification-5 {
@@ -636,14 +612,6 @@
   border-radius: 15px;
 }
 
-.home-page-desktop .mask-group-4 {
-  top: 437px;
-  left: 803px;
-  position: absolute;
-  width: 50px;
-  height: 60px;
-}
-
 .home-page-desktop .notification-6 {
   top: 249px;
   left: 1247px;
@@ -654,12 +622,12 @@
   border-radius: 15px;
 }
 
-.home-page-desktop .mask-group-5 {
-  top: 249px;
-  left: 1247px;
+.home-page-desktop .img {
   position: absolute;
   width: 50px;
   height: 60px;
+  top: 249px;
+  left: 1247px;
 }
 
 .home-page-desktop .rectangle {
@@ -808,6 +776,38 @@
   left: 870px;
 }
 
+.home-page-desktop .notifications {
+  position: absolute;
+  width: 57px;
+  height: 55px;
+  top: 441px;
+  left: 799px;
+}
+
+.home-page-desktop .notifications-2 {
+  top: 633px;
+  position: absolute;
+  width: 57px;
+  height: 51px;
+  left: 352px;
+}
+
+.home-page-desktop .notifications-3 {
+  top: 441px;
+  position: absolute;
+  width: 57px;
+  height: 51px;
+  left: 352px;
+}
+
+.home-page-desktop .notifications-4 {
+  top: 252px;
+  position: absolute;
+  width: 57px;
+  height: 51px;
+  left: 352px;
+}
+
 .home-page-desktop .group-3 {
   position: absolute;
   width: 252px;
@@ -883,6 +883,7 @@
   position: absolute;
   width: 38px;
   height: 38px;
-  top: 1056px;
-  left: 1720px;
+  top: 1055px;
+  left: 1745px;
 }
+

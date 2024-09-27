@@ -4,6 +4,41 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="static/globals.css" />
     <link rel="stylesheet" href="static/style.css" />
+    <script>
+      function goHome() {
+        alert("Home button clicked!");
+      }
+    </script>
+    <script>
+      function goToProfile() {
+        alert("Person icon clicked! Redirecting to profile...");
+        // Add any additional logic for navigating or actions
+      }
+    </script>
+    <script>
+      function supporttol() {
+        alert("Support icon clicked! Redirecting to support...");
+        // Add any additional logic for navigating or actions
+      }
+    </script>
+    <script>
+      function openAddChoreForm() {
+        alert("Opening Add Chore form...");
+        // Add your logic to show a form, modal, or other interaction.
+      }
+    </script>
+    <script>
+      function AddChores() {
+        alert("Trying to Add Chore...");
+        // Add your logic to show a form, modal, or other interaction.
+      }
+    </script>
+    <script>
+      function AddMembers() {
+          alert("Trying to Add Members...");
+          // Add your logic to show a form, modal, or other interaction.
+      }
+    </script>
   </head>
   <body>
     <div class="home-page-desktop">
@@ -14,7 +49,7 @@
             <div class="dropdown-menu">
               <header class="header">
                 <div class="menu-item-label">San Jose</div>
-                <img class="chevron-up" src="static/img/chevron-up.svg" />
+                <img class="chevron-up" src="static/img/chevron-up-1.svg" />
               </header>
               <div class="options">
                 <div class="op"><div class="text-wrapper">San Jose</div></div>
@@ -24,7 +59,9 @@
             <div class="user-user-wrapper">
               <div class="user-user">User1<br />User2</div>
             </div>
-            <div class="div-wrapper"><div class="text-wrapper-2">Add Members +</div></div>
+            <div class="div-wrapper" onclick="AddMembers()" style="cursor: pointer;">
+              <div class="text-wrapper-2">Add Members +</div>
+            </div>
             <div class="overlap-2">
               <div class="group">
                 <div class="chores-display"></div>
@@ -37,18 +74,18 @@
                 <div class="overlap-3">
                   <div class="chore">
                     <div class="overlap-group-2">
-                      <div class="overlap-4"><div class="text-wrapper-4">Turn: User 2</div></div>
-                      <img class="done" src="static/img/done-3.svg" />
-                      <div class="overlap-group-3">
+                      <div class="overlap-group-3"><div class="text-wrapper-4">Turn: User 2</div></div>
+                      <img class="done" src="static/img/done.svg" />
+                      <div class="overlap-group-4">
                         <div class="take-out-the-trash">Take out the trash<br />6:30-7:30</div>
                       </div>
                     </div>
                   </div>
                   <div class="chore">
                     <div class="overlap-group-2">
-                      <div class="overlap-group-4"><div class="text-wrapper-4">Turn: User 2</div></div>
-                      <img class="done" src="static/img/done-7.svg" />
-                      <div class="overlap-group-3">
+                      <div class="overlap-group-3"><div class="text-wrapper-4">Turn: User 2</div></div>
+                      <img class="done" src="static/img/done-1.svg" />
+                      <div class="overlap-group-4">
                         <div class="take-out-the-trash">Take out the trash<br />6:30-7:30</div>
                       </div>
                     </div>
@@ -56,9 +93,9 @@
                 </div>
                 <div class="overlap-wrapper">
                   <div class="overlap-group-2">
-                    <div class="overlap-group-5"><div class="text-wrapper-5">Turn: User 1 (You)</div></div>
-                    <img class="done" src="static/img/done-5.svg" />
-                    <div class="overlap-group-3">
+                    <div class="overlap-group-3"><div class="text-wrapper-5">Turn: User 1 (You)</div></div>
+                    <img class="done" src="static/img/done-2.svg" />
+                    <div class="overlap-group-4">
                       <p class="move-car-for-parking">Move car for parking rotation<br />9:30-11:30</p>
                     </div>
                   </div>
@@ -66,17 +103,17 @@
               </div>
               <div class="overlap-group-wrapper">
                 <div class="overlap-group-2">
-                  <div class="overlap-5"><div class="text-wrapper-4">Turn: User 2</div></div>
-                  <img class="done" src="static/img/done.svg" />
-                  <div class="overlap-group-3">
+                  <div class="overlap-group-3"><div class="text-wrapper-4">Turn: User 2</div></div>
+                  <img class="done" src="static/img/done-3.svg" />
+                  <div class="overlap-group-4">
                     <div class="feed-cat">Feed cat<br />9:30-11:30</div>
                   </div>
                 </div>
               </div>
               <div class="chore-2">
-                <div class="overlap-6">
-                  <div class="overlap-group-6"><div class="text-wrapper-4">Turn: User 2</div></div>
-                  <img class="done" src="static/img/done-2.svg" />
+                <div class="overlap-4">
+                  <div class="overlap-group-5"><div class="text-wrapper-4">Turn: User 2</div></div>
+                  <img class="done" src="static/img/done-4.svg" />
                   <div class="vacuum-living-room-wrapper">
                     <div class="vacuum-living-room">Vacuum living room<br />9:30-11:30</div>
                   </div>
@@ -84,35 +121,31 @@
               </div>
               <div class="text-wrapper-6">Today</div>
               <div class="notification"></div>
-              <img class="mask-group" src="static/img/mask-group-3.png" />
               <div class="notification-2"></div>
-              <img class="img" src="static/img/mask-group-2.png" />
               <div class="chore-3">
-                <div class="overlap-7">
-                  <div class="overlap-8"><div class="text-wrapper-4">Turn: User 2</div></div>
-                  <img class="done" src="static/img/done-6.svg" />
+                <div class="overlap-5">
+                  <div class="overlap-group-6"><div class="text-wrapper-4">Turn: User 2</div></div>
+                  <img class="done" src="static/img/done-5.svg" />
                   <div class="overlap-group-7">
                     <div class="take-out-recycling">Take out recycling<br />6:30-7:30</div>
                   </div>
                 </div>
               </div>
               <div class="chore-4">
-                <div class="overlap-7">
-                  <div class="overlap-group-8"><div class="text-wrapper-7">Turn: User 1</div></div>
-                  <img class="done" src="static/img/done-4.svg" />
+                <div class="overlap-5">
+                  <div class="overlap-group-6"><div class="text-wrapper-7">Turn: User 1</div></div>
+                  <img class="done" src="static/img/done-6.svg" />
                   <div class="overlap-group-7">
                     <div class="feed-cat-2">Feed cat<br />6:30-7:30</div>
                   </div>
                 </div>
               </div>
               <div class="notification-3"></div>
-              <img class="mask-group-2" src="static/img/mask-group.png" />
               <div class="notification-4"></div>
-              <img class="mask-group-3" src="static/img/mask-group-5.png" />
+              <img class="mask-group" src="static/img/mask-group-1.png" />
               <div class="notification-5"></div>
-              <img class="mask-group-4" src="static/img/image.png" />
               <div class="notification-6"></div>
-              <img class="mask-group-5" src="static/img/mask-group-4.png" />
+              <img class="img" src="static/img/mask-group-1.png" />
               <img class="rectangle" src="static/img/rectangle-11.png" />
               <img class="rectangle-2" src="static/img/rectangle-12.png" />
               <div class="rectangle-3"></div>
@@ -125,17 +158,21 @@
               <div class="rectangle-5"></div>
               <div class="user-user-2">User1<br />User2</div>
               <img class="calendar" src="static/img/calendar.png" />
+              <img class="notifications" src="static/img/notifications-1.svg" />
+              <img class="notifications-2" src="static/img/notifications-2.svg" />
+              <img class="notifications-3" src="static/img/notifications-4.png" />
+              <img class="notifications-4" src="static/img/notifications-4.png" />
             </div>
           </div>
           <div class="group-3">
-            <div class="overlap-group-9"><div class="text-wrapper-13">+ Add Chore</div></div>
+            <div class="overlap-group-8"><div class="text-wrapper-13">+ Add Chore</div></div>
           </div>
         </div>
         <div class="text-wrapper-14">Hello, User1</div>
-        <img class="home" src="static/img/home.png" />
-        <img class="support" src="static/img/support.png" />
-        <img class="person" src="static/img/person.png" />
-        <img class="checkbox" src="static/img/checkbox.svg" />
+        <img class="home" src="../static/img/home.png" alt="Home Icon" onclick="goHome()" style="cursor: pointer;" />
+        <img class="support" src="../static/img/support.png" alt="Support Icon" onclick="supporttol()" style="cursor: pointer;" />
+        <img class="person" src="../static/img/person.png" alt="Person Icon" onclick="goToProfile()" style="cursor: pointer;" />
+        <img class="checkbox" src="../static/img/checkbox.svg" />
       </div>
     </div>
   </body>
